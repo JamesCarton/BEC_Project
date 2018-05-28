@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/white"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        //----------- Header Left 1 ------------
+
+        <FrameLayout
+            android:id="@+id/header_frame_left_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp">
+
+            <ImageView
+                android:id="@+id/header_img_left_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:adjustViewBounds="true"
+                android:padding="12dp"/>
+
+
+        </FrameLayout>
+
+
+        //----------- Header Left 2 ------------
+
+        <FrameLayout
+            android:id="@+id/header_frame_left_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/header_frame_left_1"
+            android:layout_marginStart="0dp">
+
+            <TextView android:id="@+id/header_text_left_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:fontFamily="@font/raleway_extrabold"
+                android:textSize="22sp"
+                android:textColor="@color/blue_app"/>
+
+        </FrameLayout>
+
+        // -------------------------------------------
+
+
+        //-----------Header Center------------
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            fontPath="fonts/SFUIDisplay-Medium.otf"/>
+
+        // -------------------------------------------
+
+
+        //-----------Header Right 1 ------------
+
+        <FrameLayout
+            android:id="@+id/header_frame_right_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/header_img_right_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:padding="10dp"/>
+
+        </FrameLayout>
+
+        //---------------------------------------
+
+        //-----------Header Right 2 ------------
+
+        <FrameLayout
+            android:id="@+id/header_frame_right_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/header_frame_right_1"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/header_img_right_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+        //---------------------------------------
+
+        //-----------Header Right 3 ------------
+
+        <FrameLayout
+            android:id="@+id/header_frame_right_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/header_frame_right_2"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/header_img_right_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+        //---------------------------------------
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

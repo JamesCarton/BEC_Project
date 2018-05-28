@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toEndOf="@+id/iv1"
+        app:layout_constraintEnd_toStartOf="@+id/iv3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_margin="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toEndOf="@id/iv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/holo_blue_light"
+        android:layout_margin="8dp"/>
+
+</android.support.constraint.ConstraintLayout>
+    <!--<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>--><!--<android.support.constraint.ConstraintLayout android:id="@+id/attachmentViewFL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:id="@+id/attachmentRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <RelativeLayout
+                android:id="@+id/nonThumbnailRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/attachmentIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                     />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/progressBarRL"
+                    android:layout_toRightOf="@id/attachmentIV"
+                    android:text="text test  okay"
+                    android:textIsSelectable="false"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/rowChatMessageTimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oct 20, 10:25 AMdff fsfs fgfgfgf gfg fgf  sdd d fgdgdfg dfsdfsf saf s"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attachmentRL"
+            app:layout_constraintEnd_toStartOf="@+id/rowChatMessageStatus"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/rowChatMessageStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_ic"
+            app:layout_constraintTop_toTopOf="@+id/rowChatMessageTimeTV"
+            app:layout_constraintBottom_toBottomOf="@+id/rowChatMessageTimeTV"
+            app:layout_constraintStart_toEndOf="@id/rowChatMessageTimeTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"/>
+
+</android.support.constraint.ConstraintLayout>--><!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTitleRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="view_name"
+            app:layout_constraintStart_toEndOf="@+id/imgRow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="view_subtitle"
+            app:layout_constraintEnd_toStartOf="@+id/imgArrow"
+            app:layout_constraintStart_toEndOf="@+id/imgRow"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleRow" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+    </android.support.constraint.ConstraintLayout>--><!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <View
+            android:id="@+id/first_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            app:layout_constraintEnd_toStartOf="@id/guideline_two"
+            app:layout_constraintVertical_weight="1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.666666" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.666666" />
+
+        <View
+            android:id="@+id/two_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_two" />
+
+        <View
+            android:id="@+id/three_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/guideline_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/two_view"
+            app:layout_constraintDimensionRatio="1" />
+
+        <View
+            android:id="@+id/four_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintBottom_toBottomOf="@id/frame"
+            app:layout_constraintDimensionRatio="1" />
+
+        <View
+            android:id="@+id/five_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/holo_purple"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintBottom_toBottomOf="@id/frame"
+            app:layout_constraintStart_toEndOf="@id/four_view"
+            app:layout_constraintDimensionRatio="1" />
+
+        <View
+            android:id="@+id/six_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/holo_orange_dark"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintBottom_toBottomOf="@id/frame"
+            app:layout_constraintStart_toEndOf="@id/five_view"
+            app:layout_constraintDimensionRatio="1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>-->
+
+
+

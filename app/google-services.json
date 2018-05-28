@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "607118824870",
+    "firebase_url": "https://whitelotus-34a5f.firebaseio.com",
+    "project_id": "whitelotus-34a5f",
+    "storage_bucket": "whitelotus-34a5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607118824870:android:9f418123806cd5a2",
+        "android_client_info": {
+          "package_name": "com.wlc.beacon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607118824870-31dp11fpepke9d38m0p5r9o3b70tnefm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "607118824870-lbsi8kkab1v7rqf94h4dsc8vulubf8qn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "607118824870-0ehjs6f2il5p42is9dbf3egdcpp9aa64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5qTm-f7C432HDuwNLOXeOacpUHdsmTss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

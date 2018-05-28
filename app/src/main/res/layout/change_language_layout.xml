@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="@string/language"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_divider" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_language_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_english_preference"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@drawable/preference_selector"
+                android:fontFamily="@font/raleway_regular"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="@string/english"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:background="@color/gray_divider" />
+
+            <RadioButton
+                android:id="@+id/rb_spanish_preference"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:button="@drawable/preference_selector"
+                android:fontFamily="@font/raleway_regular"
+                android:paddingStart="20dp"
+                android:text="@string/spanish"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:background="@color/gray_divider" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
